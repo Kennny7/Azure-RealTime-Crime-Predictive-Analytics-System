@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Distribution / Packaging
+*.egg-info/
+*.eggs/
+dist/
+build/
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Media files
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Model and dataset files
+*.mat
+*.h5
+*.hdf5
+*.csv
+*.txt
+*.pkl
+*.ckpt
+*.keras
+*.sqlite3
+
+# Jupyter Notebook files
+*.ipynb
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Docker-specific files
+.dockerignore
+
+# Streamlit files
+# .streamlit 
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Node.js modules
+node_modules/
+ 
+ 
