@@ -59,7 +59,7 @@ def render_prediction_form() -> Tuple[Dict[str, Any], folium.Map]:
 
         with col2:
             area_name = st.text_input("📍 Area Name", "Los Angeles")
-            vict_sex = st.selectbox("⚤ Victim Sex", ["M", "F", "Other"], index=0)
+            vict_sex = st.selectbox("⚤ Victim Sex", ["Male", "Female", "Other"], index=0)
             time_occ = st.number_input("⏰ Time Occurred (HHMM)", min_value=0, max_value=2359, value=1200)
             hour_occ = st.number_input("⏳ Hour Occurred", min_value=0, max_value=23, value=14)
 
@@ -134,6 +134,7 @@ def main() -> None:
     )
     
     # Apply custom theme
+   
     st.markdown(
         f"""
         <style>
@@ -143,8 +144,13 @@ def main() -> None:
             .sidebar .sidebar-content {{
                 background-color: {THEME_CONFIG['secondaryBackgroundColor']};
             }}
+            /* Add these new rules */
             div[data-baseweb="select"] > div {{
-                background-color: {THEME_CONFIG['secondaryBackgroundColor']};
+                background-color: {THEME_CONFIG['secondaryBackgroundColor']} !important;
+                color: {THEME_CONFIG['textColor']} !important;
+            }}
+            div[data-baseweb="select"] svg {{
+                fill: {THEME_CONFIG['textColor']} !important;
             }}
         </style>
         """,
