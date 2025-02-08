@@ -56,9 +56,6 @@ Thumbs.db
 # Docker-specific files
 .dockerignore
 
-# Streamlit files
-# .streamlit 
-
 # Backup files
 *.bak
 *.old
@@ -66,5 +63,3 @@ Thumbs.db
 
 # Node.js modules
 node_modules/
- 
- 
