@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "CrimeReport",
+  "namespace": "com.crimeprediction.avro",
+  "fields": [
+    {
+      "name": "crime_type",
+      "type": "string"
+    },
+    {
+      "name": "coordinates",
+      "type": {
+        "type": "record",
+        "name": "GeoPoint",
+        "fields": [
+          {
+            "name": "lat",
+            "type": "double"
+          },
+          {
+            "name": "lon",
+            "type": "double"
+          }
+        ]
+      }
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "area_name",
+      "type": "string"
+    },
+    {
+      "name": "victim_age",
+      "type": "int"
+    }
+  ]
+}

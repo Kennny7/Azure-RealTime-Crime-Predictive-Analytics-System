@@ -1,0 +1,37 @@
+# Azure Cloud Configuration
+azure:
+  storage_account: "crimeprojectstorage"
+  blob_container: "crime-data"
+  mount_point: "/mnt/crime_data"
+  databricks_workspace: "/subscriptions/.../crime-db"
+  ml:
+    tracking_uri: "tracking uri placeholder"
+    experiment_name: "/Users/Username@Domain.com/crime_detection_experiment"
+
+# Kafka/Event Hubs Configuration
+kafka:
+  bootstrap_servers: "crime-kafka.servicebus.windows.net:9093"
+  input_topic: "raw-reports"
+  output_topic: "severity-predictions"
+  consumer_group: "crime-prediction-consumers"
+
+# Model Configuration
+model:
+  input_shape: 35  # Should match feature vector size
+  batch_size: 256
+  learning_rate: 0.0001
+  architecture: "512-256-128"
+  registry_name: "crime_severity_mlp"
+  production_stage: "Production"
+
+# Path Configuration
+paths:
+  raw_data: "dbfs:/mnt/crime_data/Crime_Data_from_2020_to_Present.csv"
+  processed_data: "dbfs:/mnt/crime_data/processed_data"
+  model_checkpoint: "best_model.keras"
+
+# Evaluation Parameters
+evaluation:
+  test_size: 0.2
+  random_state: 42
+  metrics: ["accuracy", "precision", "recall", "roc_auc"]

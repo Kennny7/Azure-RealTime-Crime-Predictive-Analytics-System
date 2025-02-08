@@ -1,0 +1,19 @@
+cluster:
+  name: "crime-data-processing"
+  spark_version: "13.3.x-scala2.12"
+  node_type_id: "Standard_DS3_v2"
+  autoscale:
+    min_workers: 2
+    max_workers: 8
+
+jobs:
+  data_cleaning:
+    file_path: "/Workspace/Users/Username@Domain.com/preprocessing/spark_jobs/data_cleaning.py"
+    timeout_seconds: 3600
+    max_concurrent_runs: 1
+
+libraries:
+  pypi:
+    - "pyspark==3.5.0"
+    - "azure-storage-blob==12.19.0"
+  jar: []
