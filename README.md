@@ -134,7 +134,7 @@ Data Flow:
 
 ### Local Development
 ```bash
-git clone https://github.com/your-org/crime-prediction-system.git
+git clone https://github.com/Kennny7/RealTime-Crime-Predictive-Analytics-System.git
 cd crime-prediction-system
 
 # Create virtual environment
