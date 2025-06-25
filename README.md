@@ -1,4 +1,4 @@
-# Crime Detection & Predictive Analytics System  
+# Azure RealTime Crime Predictive Analytics System  
 **Real-Time Severity Prediction Powered by Azure Cloud & Deep Learning**  
 ![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0089D6?logo=microsoft-azure) 
 ![License](https://img.shields.io/badge/License-MIT-blue) 
@@ -16,7 +16,7 @@ A cloud-native system transforming crime analysis from reactive to proactive thr
 
 ## 🌳 Project Structure
 ```bash
-crime-prediction-system/
+Azure-RealTime-Crime-Predictive-Analytics-System/
 ├── data/                   # Raw and processed datasets
 │   ├── raw/                # Initial crime records from Azure Blob
 │   │   └── crime_records.csv
@@ -134,8 +134,8 @@ Data Flow:
 
 ### Local Development
 ```bash
-git clone https://github.com/Kennny7/RealTime-Crime-Predictive-Analytics-System.git
-cd crime-prediction-system
+git clone https://github.com/Kennny7/Azure-RealTime-Crime-Predictive-Analytics-System.git
+cd Azure-RealTime-Crime-Predictive-Analytics-System
 
 # Create virtual environment
 python -m venv .venv
